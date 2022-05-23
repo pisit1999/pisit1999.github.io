@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- นาย พิสิาฐ์ สลักคำ -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Input Number : <input type="text" name="num1" id="num1"style="width: 80px">
+    <br>
+    Input Number : <input type="text" name="num2" id="num2"style="width: 80px">
+    <br>
+    <br>
+    <button style="width: 30px" onclick="sum()">+</button>
+    <button style="width: 30px"onclick="minus()">-</button>
+    <button style="width: 30px"onclick="multipy()">*</button>
+    <button style="width: 30px" onclick="devide()">/</button>
+    <br>
+    <br>
+     <!--<p id="output">Ans =</p-->
+        <span id="output">Ans =</span>
+
+    <br>
+    <script>
+        let n1 =0
+        let n2=0
+        let ans = 0
+        function start(){
+        let n1 =Number  (document.getElementById('num1').value) 
+        let n2  = Number (document.getElementById('num2').value)
+        
+        }
+        function sum(){
+            start()
+            ans = n1+ n2
+            document.getElementById('output').innerHTML=ans
+            
+
+        }
+        function minus(){
+            start()
+            ans = n1 - n2
+            document.getElementById('output').innerHTML=ans
+            
+
+        }
+        function multipy(){
+            start()
+            ans = n1  * n2
+            document.getElementById('output').innerHTML=ans
+            
+
+        }
+        function devides(){
+            start()
+            ans = n1 / n2
+            document.getElementById('output').innerHTML=ans
+            
+
+        }
+        
+        function sum(){document.getElementById('output').innerHTML = 
+            (Number  (document.getElementById('num1').value) +
+            Number (document.getElementById('num2').value))
+        }
+        function minus(){document.getElementById('output').innerHTML = 
+        (Number  (document.getElementById('num1').value) -
+            Number (document.getElementById('num2').value))
+
+        }
+        
+        function multipy(){document.getElementById('output').innerHTML = 
+        (Number  (document.getElementById('num1').value) *
+            Number (document.getElementById('num2').value))
+
+        }
+        function devide(){document.getElementById('output').innerHTML = 
+        (Number  (document.getElementById('num1').value) /
+            Number (document.getElementById('num2').value))
+
+        }
+    </script>
+</body>
+</html>
