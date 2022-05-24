@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>18.js.array.car</title>
     <script>
-        let car = ['Toyota','Isuzu','Mazde','Fokk']
+        let car = ['Toyota','Isuzu','Mazde','Ford']
     </script>
 </head>
 <body>
@@ -27,6 +27,18 @@
          //for (let i in car){
             //document.write(car[i ]+'<br>')
          //}
+         car[4] = 'MG'
+         car[5] = 'Honda'
+         car[4] = 'Nissan'
+         car.pop()
+         car.pop()
+         car.push('BMW')
+         car.shift()
+         car.unshift('Volvo')
+         car.sort()
+         
+
+         //
          for (let i of car){
             document.write(i +'<br>') 
          }
