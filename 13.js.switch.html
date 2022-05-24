@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Input Score (0-100) : <input title="text" name=""id="num1">
+    <br>
+    <button onclick="hi_low()"> Submit</button>
+    <br>
+    <br>
+    <p id="output"></p>
+    <script>
+        function hi_low(){"1"
+            switch (Number(document.getElementById('num1').value)){
+                case 0:case 1:case 2:case 3:case 4:case 5:
+                document.getElementById('output').innerHTML='LOW'
+                break;
+                case 6:case 7:case 8:case 9:case 10:
+                document.getElementById('output').innerHTML='HI'
+                break;
+            }
+        }
+    </script>
+
+</body>
+</html>
